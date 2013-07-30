@@ -1,9 +1,13 @@
+# For Openshift
+require File.join(Rails.root,'lib','openshift_secret_generator.rb')
+
 module Tracks
   
   class Config
     
     def self.salt
-       SITE_CONFIG['salt']
+      # Use Openshift secret generator if not specified
+       SITE_CONFIG['salt'] || initialize_secret(:session_store, '_tracks_salt')
     end
 
     def self.auth_schemes
