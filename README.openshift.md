@@ -12,7 +12,11 @@ configured the 'rhc' commandline app to create Openshift apps [as per the Opensh
 
 ## Commands
 
-First clone this repo to your local machine. Then create the app:
+First clone this repo to your local machine:
+
+git clone -b openshift-quickstart  git@github.com:GregSutcliffe/tracks.git
+
+Then create the app:
 
 * rhc app create [app] ruby-2.0 mysql-5.5 BUNDLE_WITHOUT="development test" "RAILS_ENV=production" --no-git
 
