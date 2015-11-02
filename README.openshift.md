@@ -1,6 +1,6 @@
 # Tracks on Openshift
 
-Tracks can be run easily on [Red Hat's Openshift platform](www.openshift.com), using the following method.
+Tracks can be run easily on [Red Hat's Openshift platform](https://www.openshift.com/), using the following method.
 
 ## Assumptions
 
